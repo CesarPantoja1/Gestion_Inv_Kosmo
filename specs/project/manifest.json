@@ -1,0 +1,27 @@
+{
+  "specs": [
+    {
+      "id": "3b137272-97e2-4721-b26c-c3889914d423",
+      "name": "Catálogo de Productos",
+      "position": 0,
+      "dependencies": []
+    },
+    {
+      "id": "4e3d6834-3bf4-4e1d-95ed-80887c57aee0",
+      "name": "Movimientos y Existencias",
+      "position": 1,
+      "dependencies": [
+        "Catálogo de Productos"
+      ]
+    },
+    {
+      "id": "4d117c0f-cc80-40dd-b91a-ebfda6d0f875",
+      "name": "Consulta de Inventario e Historial",
+      "position": 2,
+      "dependencies": [
+        "Catálogo de Productos",
+        "Movimientos y Existencias"
+      ]
+    }
+  ]
+}
